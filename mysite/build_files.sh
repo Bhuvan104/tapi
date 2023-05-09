@@ -2,5 +2,5 @@
 pip install -r requirements.txt
 
 # make migrations
-python2.75 manage.py migrate 
-python2.75 manage.py collectstatic
+python manage.py migrate 
+python manage.py collectstatic
