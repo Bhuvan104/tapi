@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 112, 161);
+    min-height: 100vh;
+    margin: 0;
+    color:#f0f0f0
+}
+.container{
+    background-color: rgb(19, 91, 73);
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.header{
+    background-color: rgb(109, 102, 93);
+    padding:20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+header{
+    margin:0;
+}
+form{
+    padding:30px 40px;
+}
+.field{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position:relative;
+}
+.field label{
+display:inline-block;
+margin-bottom: 5px;
+}
+.field input:not(.terms){
+    display:block;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    padding:10px 20px;
+    background-color: rgb(168, 148, 148);
+
+}
+.field span{
+    position:absolute;
+    top:30px;
+    right:10px;
+    visibility:hidden;
+}
+.field small{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    visibility:hidden;
+
+}
+.form .button{
+    background-color: rgb(75, 17, 151);
+    border:2px solid rgb(177, 169, 188);
+    color: white;
+    padding:10px;
+    display: block;
+    width: 100%;
+}
+.field.success input{
+    border:green;
+
+}
+.field.error input{
+    border:red;
+}
+.field.success span.success{
+    visibility: visible;
+    color:green;
+
+}
+
+.field.error span.error{
+    visibility: visible;
+    color:red;
+    
+}
+
+.field.error span.success{
+    display:none;
+}
+.field.success span.error{
+    display:none;
+}
+
+.field.error small{
+    visibility: visible;
+    color:rgb(203, 203, 169);
+}
