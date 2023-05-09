@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from polls import views
+from django.conf import settings
+from django.conf.urls.static import static
+
 app_name = "main"
 
 urlpatterns = [
@@ -26,6 +29,7 @@ urlpatterns = [
     path('getCourseSessionMapping/', views.getCourseSessionMapping, name='getCourseSessionMapping'),
     path('GetLearnerAssessments/', views.GetLearnerAssessments, name='GetLearnerAssessments'),
 
+    
     # path('samples/', views.samples, name='samples'),
     # path('employess/', views.employess, name='employess'),
     # # path('dropdown/', views.dropdown, name='dropdown'),
@@ -49,3 +53,6 @@ urlpatterns = [
     # path("delete/<int:id>", views.delete, name="delete"),
     # # path("jsonres", views.send_dictionary, name="jsonres"),
 ]
+# add at the last
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
