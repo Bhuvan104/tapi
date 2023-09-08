@@ -396,5 +396,5 @@ def GetLearnerAssessments(request):
 # # 	return render(request, 'jso.html', {'data': dataJSON})
 
 def bhuvancred(request):
-    data={"username":"Bhuvan kumar","password":"python@123","address":"Puttur"}
+    data={"username":"Bhuvan kumar","password":"python@123","address":"Puttur","phonenumber":"8008509709"}
     return JsonResponse(data)
