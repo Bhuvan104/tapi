@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 app_name = "main"
 
 urlpatterns = [
+    path('bhuvancred/', views.bhuvancred, name='bhuvancred'),
     path('GetLearnerAssessments/', views.GetLearnerAssessments, name='GetLearnerAssessments'),
     path('getTeacherDetails/', views.getTeacherDetails, name='getTeacherDetails'),
     path('GetGroupSessionInfo/', views.GetGroupSessionInfo, name='GetGroupSessionInfo'),
